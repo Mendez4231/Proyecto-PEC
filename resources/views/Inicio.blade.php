@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto de reforestación del CBTA 35 Leona Vicario: conoce el suelo, las especies y cómo participar.">
-    <title>Inicio · Reforestación CBTA 35 Leona Vicario</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="{{ asset('Estilos.css') }}">
     <link rel="icon" href="{{ asset('img/favlogo.ico') }}" type="image/x-icon">
 </head>

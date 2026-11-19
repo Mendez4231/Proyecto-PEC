@@ -93,27 +93,33 @@
             <li>Suelo limoso:Tiene partículas más finas que la arena, pero más gruesas que la arcilla. Retiene humedad y nutrientes, por lo que puede ser bueno para plantas si tiene buen drenaje.</li>
             <li>Suelo arcilloso:Contiene mucha arcilla. Retiene mucha agua, pero puede compactarse y dificultar el drenaje. Cuando está seco puede endurecerse y cuando está húmedo puede volverse pegajoso.</li>
             <li>Suelo salino:Contiene una cantidad alta de sales. Puede afectar el crecimiento de muchas plantas porque dificulta la absorción de agua y nutrientes. En Valle de Chalco, este tipo de suelo se relaciona con el Solonchak.</li>
-            <li></li>
-
-
         </ol>
-
        </section>
+       <section class="text">
+        <h2>¿Por qué importa para el CBTA?</h2>
+        <p>El área que se pretende reforestar en el CBTA 35 se encuentra dentro de Valle de Chalco, una zona con suelos que pueden presentar problemas de salinidad, drenaje y compactación. Por eso, antes de plantar es necesario observar el terreno y no asumir que cualquier especie podrá crecer bien.</p>
+        <p>El Atlas de Riesgos del municipio indica que, en la parte plana, los suelos son franco limosos, franco arcillosos y franco arenosos, con colores oscuros, profundidad variable y problemas de sales y drenaje.</p>
+        <h2>¿Cómo mejorar el suelo antes de reforestar?</h2>
+        <p>Si el suelo está compactado, pobre en nutrientes o con problemas de drenaje, se pueden realizar acciones como:</p>
+        <section class="list">
+            <ul>
+                <li>Retirar basura, escombros y maleza.</li>
+                <li>Aflojar el suelo con herramientas, sin dañar raíces existentes.</li>
+                <li>Agregar composta o materia orgánica para mejorar la fertilidad.</li>
+                <li>Evitar pisar demasiado el área de plantación.</li>
+                <li>Hacer hoyos o cepas adecuados para cada especie.</li>
+                <li>Elegir especies tolerantes a las condiciones del lugar.</li>
+                <li>Realizar riegos moderados y evitar encharcamientos.</li>
+            </ul>
+        </section>
+        <p>La Conafor señala que el composteo puede mejorar la calidad y estructura del suelo, además de proporcionar nutrientes que favorecen el establecimiento de especies forestales.</p>
+
+        <div class="cta">
+            <p></p>
+        </div>
+       
+    </section>
     
-
-
-
-
-       </section>
-
-
-
-
-
-
-
-
-
     </main>
     @include('partials.footer')
 </body>
