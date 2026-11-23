@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arboles</title>
+    <title>Árboles recomendados · CBTA 35</title>
     <link rel="stylesheet" href="{{ asset('Estilos.css') }}">
     <link rel="icon" href="{{ asset('img/favlogo.ico') }}" type="image/x-icon">
 </head>
@@ -11,145 +11,207 @@
     @include('partials.header')
     <main>
         <section class="hero">
-            <h1>Elegir el árbol correcto: el siguiente paso para recuperar nuestro CBTA</h1>
-            <p>No todos los árboles son iguales. Conocer el suelo y el espacio nos permite seleccionar especies que puedan crecer sanas y beneficiar a toda la comunidad escolar.</p>
-            <p>Después de conocer el suelo del CBTA 35 "Leona Vicario", es momento de elegir las especies adecuadas para reforestar el área afectada por la construcción del Trolebús. Aquí encontrarás árboles, arbustos y plantas recomendadas para el entorno escolar, así como un plan para plantarlas y cuidarlas.</p>
+            <span class="eyebrow">Selección de especies</span>
+            <h1>Elegir el árbol correcto: el siguiente paso para <em>recuperar</em> nuestro CBTA</h1>
+            <p>Después de analizar el suelo del CBTA 35 "Leona Vicario", es momento de seleccionar especies resistentes que puedan prosperar en las áreas afectadas por la construcción del Trolebús y beneficiar a toda la comunidad escolar.</p>
         </section>
 
-        <section class="text">
-            <h2>Árboles recomendados</h2>
-            <p>Para el CBTA 35, se recomienda priorizar especies nativas o adaptadas a la Cuenca de México, que resistan las condiciones de Valle de Chalco y no dañen instalaciones escolares. Las especies nativas son importantes porque favorecen la recuperación de la estructura original, la riqueza y la diversidad del ecosistema.</p>
+        <div class="text">
+            <!-- 1. TARJETAS INFORMATIVAS DE ESPECIES CLAVE -->
+            <section>
+                <h2>Especies clave para las condiciones de Valle de Chalco</h2>
+                <p>Debido a la salinidad, compactación y periodos de estiaje en nuestro entorno, estas tres especies destacan por su alta capacidad de adaptación, bajo requerimiento hídrico y resistencia:</p>
 
+                <div class="species-grid">
+                    <!-- Tarjeta 1: Huizache -->
+                    <article class="species-card">
+                        <div class="species-media">
+                            <span class="species-badge">Nativa · Fijadora de nitrógeno</span>
+                            <img src="{{ asset('img/Huizache.webp') }}" alt="Árbol de Huizache (Vachellia farnesiana)">
+                        </div>
+                        <div class="species-body">
+                            <h3>Huizache</h3>
+                            <span class="species-scientific">Vachellia farnesiana</span>
+                            <p>Árbol nativo sumamente resistente a la sequía y a suelos pobres o compactados. Sus raíces fijan nitrógeno atmosférico, mejorando la fertilidad del terreno para otras plantas, y sus flores amarillas atraen polinizadores.</p>
+                            <ul class="species-meta">
+                                <li><strong>Altura promedio:</strong> 4 a 7 metros</li>
+                                <li><strong>Ubicación ideal:</strong> Perímetros, bordos y áreas abiertas (evitar pasos estrechos por sus espinas).</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2: Pirul -->
+                    <article class="species-card">
+                        <div class="species-media">
+                            <span class="species-badge">Sombra · Alta rusticidad</span>
+                            <img src="{{ asset('img/pirul.jpg') }}" alt="Árbol de Pirul (Schinus molle)">
+                        </div>
+                        <div class="species-body">
+                            <h3>Pirul</h3>
+                            <span class="species-scientific">Schinus molle</span>
+                            <p>Especie ampliamente naturalizada en la Cuenca de México. Tolera suelos alcalinos, salinos y con poca agua, proporcionando una copa frondosa de sombra perenne y refugio para aves locales.</p>
+                            <ul class="species-meta">
+                                <li><strong>Altura promedio:</strong> 8 a 15 metros</li>
+                                <li><strong>Ubicación ideal:</strong> Patios amplios y zonas alejadas de banquetas o tuberías.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3: Taray -->
+                    <article class="species-card">
+                        <div class="species-media">
+                            <span class="species-badge">Tolerante a salinidad</span>
+                            <img src="{{ asset('img/taray.jpg') }}" alt="Arbusto o árbol de Taray (Tamarix spp.)">
+                        </div>
+                        <div class="species-body">
+                            <h3>Taray</h3>
+                            <span class="species-scientific">Tamarix spp.</span>
+                            <p>Especie especialista en suelos salinos (Solonchak) y terrenos con nivel freático variable como los de Valle de Chalco. Ayuda a controlar la erosión eólica y soporta condiciones extremas donde otros árboles no sobreviven.</p>
+                            <ul class="species-meta">
+                                <li><strong>Altura promedio:</strong> 3 a 8 metros</li>
+                                <li><strong>Ubicación ideal:</strong> Zonas con alta salinidad, franjas de amortiguamiento y bordes del plantel.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 2. TABLA COMPLEMENTARIA DE ESPECIES NATIVAS -->
             <section class="table">
+                <h2>Otras especies recomendadas para el plantel</h2>
+                <p>Para lograr diversidad ecológica y evitar monocultivos, se recomienda combinar las especies anteriores con árboles y arbustos nativos de la Cuenca de México:</p>
                 <table>
-                    <tr>
-                        <th>Especie</th>
-                        <th>Tipo</th>
-                        <th>Uso recomendado</th>
-                        <th>Ventajas</th>
-                    </tr>
-                    <tr>
-                        <td>Tepozán (Buddleja cordata)</td>
-                        <td>Árbol o arbusto nativo</td>
-                        <td>Áreas verdes, bordes y zonas de restauración</td>
-                        <td>Atrae polinizadores, es resistente y contribuye a la recuperación ecológica.</td>
-                    </tr>
-                    <tr>
-                        <td>Palo loco (Pittocaulon praecox)</td>
-                        <td>Arbusto o árbol pequeño nativo</td>
-                        <td>Zonas degradadas y áreas de restauración</td>
-                        <td>Resistente y útil para recuperar suelos y vegetación.</td>
-                    </tr>
-                    <tr>
-                        <td>Chapulixtle (Dodonaea viscosa)</td>
-                        <td>Arbusto nativo</td>
-                        <td>Bordos, jardineras y zonas con suelo degradado</td>
-                        <td>Ayuda a estabilizar el suelo y requiere poco mantenimiento.</td>
-                    </tr>
-                    <tr>
-                        <td>Pirul (Schinus molle)</td>
-                        <td>Árbol de sombra</td>
-                        <td>Patios amplios y zonas abiertas</td>
-                        <td>Proporciona sombra y ha sido utilizado en reforestaciones de la región.</td>
-                    </tr>
-                    <tr>
-                        <td>Encino (Quercus spp.)</td>
-                        <td>Árbol nativo</td>
-                        <td>Áreas amplias con espacio suficiente</td>
-                        <td>Favorece la biodiversidad y ofrece refugio a fauna.</td>
-                    </tr>
-                    <tr>
-                        <td>Fresno (Fraxinus spp.)</td>
-                        <td>Árbol de sombra</td>
-                        <td>Áreas amplias y caminos internos</td>
-                        <td>Puede dar sombra, pero debe elegirse según disponibilidad y condiciones del predio.</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Especie</th>
+                            <th>Tipo</th>
+                            <th>Uso recomendado</th>
+                            <th>Ventajas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tepozán (<em>Buddleja cordata</em>)</td>
+                            <td>Árbol o arbusto nativo</td>
+                            <td>Áreas verdes, bordes y zonas de restauración</td>
+                            <td>Atrae polinizadores, crece rápido y contribuye a la recuperación ecológica.</td>
+                        </tr>
+                        <tr>
+                            <td>Palo loco (<em>Pittocaulon praecox</em>)</td>
+                            <td>Arbusto nativo</td>
+                            <td>Zonas degradadas y rocosas</td>
+                            <td>Muy resistente a la sequía y útil para iniciar la cobertura vegetal.</td>
+                        </tr>
+                        <tr>
+                            <td>Chapulixtle (<em>Dodonaea viscosa</em>)</td>
+                            <td>Arbusto nativo</td>
+                            <td>Bordos, jardineras y setos</td>
+                            <td>Estabiliza el suelo, retiene humedad y requiere mínimo mantenimiento.</td>
+                        </tr>
+                        <tr>
+                            <td>Encino (<em>Quercus spp.</em>)</td>
+                            <td>Árbol nativo</td>
+                            <td>Áreas amplias con suelo profundo</td>
+                            <td>Favorece la biodiversidad y ofrece refugio permanente a la fauna.</td>
+                        </tr>
+                        <tr>
+                            <td>Fresno (<em>Fraxinus uhdei</em>)</td>
+                            <td>Árbol de sombra</td>
+                            <td>Áreas amplias y calzadas internas</td>
+                            <td>Brinda excelente sombra en zonas con disponibilidad de riego inicial.</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 
+            <!-- 3. PRECAUCIONES DE PLANTACIÓN -->
             <section class="list">
-                <h2>Especies que conviene evitar</h2>
-                <p>No se recomienda plantar especies con raíces agresivas, espinas peligrosas, frutos que manchen mucho o copas demasiado grandes cerca de aulas, bardas, tuberías o cables.</p>
+                <h2>Especies y ubicaciones que conviene evitar</h2>
+                <p>Para proteger la infraestructura escolar y garantizar la seguridad de los estudiantes, es necesario considerar las siguientes restricciones:</p>
                 <ul>
-                    <li>Evitar árboles muy grandes en banquetas estrechas.</li>
-                    <li>No plantar cerca de tuberías, drenajes o cimientos.</li>
-                    <li>Evitar especies con espinas en zonas de paso estudiantil.</li>
-                    <li>No usar plantas invasoras que puedan desplazar a las especies nativas.</li>
-                    <li>Evitar especies que requieran mucho riego si el área no cuenta con agua suficiente.</li>
+                    <li>Evitar árboles de gran porte o raíces superficiales agresivas (como ficus o eucaliptos) cerca de aulas, bardas, tuberías o cables.</li>
+                    <li>No plantar especies con espinas (como el huizache) en andadores estrechos o zonas de tránsito estudiantil.</li>
+                    <li>Evitar plantas invasoras que desplacen a la flora nativa o demanden riego excesivo en época de sequía.</li>
                 </ul>
-</section>
-            <section class="list">
-                <h2>Plan de reforestación</h2>
-                <p>El plan debe realizarse por etapas para asegurar que los árboles sobrevivan y crezcan sanos. SEMARNAT señala que la reforestación debe incluir la selección del sitio, la preparación del terreno, la plantación y el mantenimiento posterior.</p>
+            </section>
+
+            <!-- 4. PLAN DE REFORESTACIÓN POR ETAPAS -->
+            <section class="table">
+                <h2>Plan de reforestación por etapas</h2>
+                <p>De acuerdo con las recomendaciones de la SEMARNAT, una reforestación exitosa requiere ejecutar seis fases ordenadas:</p>
                 <table>
-                    <tr>
-                        <th>Etapa</th>
-                        <th>Actividad</th>
-                    </tr>
-                    <tr>
-                        <td>1. Diagnóstico</td>
-                        <td>Observar el área, el tipo de suelo, la disponibilidad de agua, la cantidad de sol y las zonas que necesitan sombra.</td>
-                    </tr>
-                    <tr>
-                        <td>2. Selección de especies</td>
-                        <td>Elegir árboles nativos o adaptados, considerando tamaño adulto, raíces, sombra y mantenimiento.</td>
-                    </tr>
-                    <tr>
-                        <td>3. Preparación del terreno</td>
-                        <td>Limpiar basura, retirar maleza, abrir hoyos y mejorar el suelo con composta o tierra vegetal si es necesario.</td>
-                    </tr>
-                    <tr>
-                        <td>4. Producción o compra de plantas</td>
-                        <td>Conseguir plantas en vivero, preferentemente nativas, sanas y del tamaño adecuado.</td>
-                    </tr>
-                    <tr>
-                        <td>5. Plantación</td>
-                        <td>Realizarla durante la temporada de lluvias, cuando el suelo tiene humedad.</td>
-                    </tr>
-                    <tr>
-                        <td>6. Mantenimiento</td>
-                        <td>Regar, deshierbar, proteger los árboles, revisar plagas y reponer plantas que no sobrevivan.</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Actividad principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Diagnóstico</td>
+                            <td>Evaluar el tipo de suelo, salinidad, disponibilidad de agua, exposición solar y espacios libres de infraestructura.</td>
+                        </tr>
+                        <tr>
+                            <td>2. Selección de especies</td>
+                            <td>Asignar cada especie según su tolerancia al suelo y su tamaño adulto.</td>
+                        </tr>
+                        <tr>
+                            <td>3. Preparación del terreno</td>
+                            <td>Limpiar escombros, deshierbar, abrir cepas de 40 × 40 × 40 cm y enriquecer con composta.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Obtención de planta</td>
+                            <td>Adquirir ejemplares sanos en vivero, con tallo lignificado y buen sistema radicular.</td>
+                        </tr>
+                        <tr>
+                            <td>5. Plantación</td>
+                            <td>Ejecutar al inicio de la temporada de lluvias (junio-julio) para aprovechar la humedad natural.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Mantenimiento</td>
+                            <td>Realizar cajeteo, riego de auxilio en estiaje, control de plagas y reposición de fallas.</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 
+            <!-- 5. PLAN OPERATIVO Y PARTICIPACIÓN POR CARRERAS -->
             <section class="list">
-                <h2>Ejemplo de plan escolar</h2>
-                <p>Meta: plantar de 20 a 50 árboles y arbustos en áreas verdes del CBTA 35.</p>
-                <p>Actividades:</p>
+                <h2>Ejemplo de plan operativo escolar</h2>
+                <p><strong>Meta:</strong> Establecer de 20 a 50 árboles y arbustos en las áreas verdes y perímetros del CBTA 35.</p>
                 <ol>
-                    <li>Jornada de limpieza.</li>
-                    <li>Medición del área.</li>
-                    <li>Selección de especies.</li>
-                    <li>Preparación de hoyos.</li>
-                    <li>Plantación con participación estudiantil.</li>
-                    <li>Riego semanal durante los primeros meses.</li>
-                    <li>Registro fotográfico del crecimiento.</li>
-                    <li>Evaluación de supervivencia después de 3, 6 y 12 meses.</li>
+                    <li>Jornada comunitaria de limpieza y retiro de escombro.</li>
+                    <li>Trazo y marcaje de cepas respetando distancias entre árboles (mínimo 3 a 5 m).</li>
+                    <li>Excavación y mejoramiento del sustrato con composta.</li>
+                    <li>Plantación guiada con participación de estudiantes y docentes.</li>
+                    <li>Calendarización de riego semanal durante la temporada seca.</li>
+                    <li>Bitácora fotográfica y evaluación de supervivencia a los 3, 6 y 12 meses.</li>
                 </ol>
             </section>
 
             <section class="list">
-                <h2>Participación de las carreras</h2>
+                <h2>Vinculación con las carreras técnicas del CBTA 35</h2>
+                <p>El proyecto integra los conocimientos prácticos de las especialidades que se imparten en nuestro plantel:</p>
                 <dl>
-                    <dt>Agropecuario:</dt>
-                    <dd>puede apoyar en el manejo del suelo, la producción de plantas y el cuidado de las áreas verdes.</dd>
-                    <dt>Biotecnología:</dt>
-                    <dd>puede participar en la selección de especies, el análisis del suelo y el monitoreo del crecimiento.</dd>
-                    <dt>Apicultura:</dt>
-                    <dd>puede promover la protección de polinizadores mediante plantas melíferas y flores.</dd>
-                    <dt>Agroindustrias:</dt>
-                    <dd>puede vincular el proyecto con la producción, transformación y aprovechamiento responsable de recursos naturales.</dd>
+                    <dt>Técnico Agropecuario:</dt>
+                    <dd>Preparación del terreno, manejo de sustratos, apertura de cepas, plantación y mantenimiento agronómico.</dd>
+                    <dt>Técnico en Biotecnología:</dt>
+                    <dd>Análisis físico-químico del suelo (pH y salinidad), uso de biofertilizantes y monitoreo de desarrollo vegetal.</dd>
+                    <dt>Técnico en Apicultura:</dt>
+                    <dd>Selección de flora melífera (como huizache y tepozán) para fortalecer el hábitat de abejas y polinizadores locales.</dd>
+                    <dt>Técnico en Agroindustrias:</dt>
+                    <dd>Aprovechamiento sustentable de subproductos vegetales, elaboración de compostas y gestión ambiental.</dd>
                 </dl>
-                <p>El CBTA 35 ofrece carreras técnicas como Agropecuario, Biotecnología, Apicultura y Agroindustrias, por lo que el proyecto puede vincularse directamente con la formación técnica y ambiental de los estudiantes.</p>
             </section>
 
-            <p>Elegir las especies adecuadas y seguir un plan de reforestación permitirá recuperar el área afectada, mejorar el entorno escolar y crear un espacio más verde, saludable y sostenible para toda la comunidad del CBTA 35.</p>
+            <p class="cta">
+                “Seleccionar especies adaptadas a nuestro suelo y darles seguimiento técnico permitirá recuperar las áreas afectadas del CBTA 35, creando un entorno escolar más fresco, biodiverso y sostenible.”
+            </p>
 
-            <div class="Cart" >
-                <a href="{{ route('beneficios') }}" >Conocer los beneficios de reforestar</a>
+            <div class="Cart">
+                <a href="{{ route('beneficios') }}">Conocer los beneficios de reforestar</a>
             </div>
-        </section>
+        </div>
     </main>
     @include('partials.footer')
 </body>

@@ -139,8 +139,6 @@ button:focus-visible {
     height: 44px;
     width: auto;
     display: block;
-    /* Si tu logo es oscuro y no se ve sobre el verde, descomenta: */
-    /* filter: brightness(0) invert(1); */
 }
 
 .nav-links {
@@ -224,7 +222,7 @@ button:focus-visible {
 
 .hero p {
     font-size: 1.15rem;
-    max-width: 620px;
+    max-width: 650px;
     margin: 0 auto 1rem;
 }
 
@@ -285,7 +283,6 @@ button:focus-visible {
     padding: 2rem 2rem 4rem;
 }
 
-/* Legibilidad: párrafos y listas */
 .text p,
 .about p,
 .suelo p,
@@ -310,6 +307,156 @@ button:focus-visible {
     border-top: none;
     margin-top: 0;
     padding-top: 0;
+}
+
+/* ==================== DIAGRAMA DE SUELO (Split Layout) ==================== */
+.diagram-split {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-top: 1.5rem;
+}
+
+.diagram-split .figure {
+    margin: 0;
+    background: var(--paper-card);
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
+}
+
+.diagram-split .figure img {
+    box-shadow: none;
+    border-radius: var(--radius-sm);
+}
+
+.horizons-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.horizons-list li {
+    background: var(--paper-card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--moss);
+    padding: 0.85rem 1.1rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.horizons-list li strong {
+    color: var(--forest);
+    font-family: var(--font-display);
+}
+
+/* ==================== TARJETAS DE ESPECIES (Árboles) ==================== */
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.75rem;
+    margin: 2rem 0;
+}
+
+.species-card {
+    background: var(--paper-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.species-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.species-media {
+    position: relative;
+    height: 220px;
+    background: var(--paper-soft);
+    overflow: hidden;
+}
+
+.species-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.species-card:hover .species-media img {
+    transform: scale(1.04);
+}
+
+.species-badge {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    background: var(--forest);
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+}
+
+.species-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.species-body h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.35rem;
+    color: var(--ink);
+}
+
+.species-scientific {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--clay-dark);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.species-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    flex: 1;
+}
+
+.species-meta {
+    list-style: none;
+    padding: 0.9rem 0 0;
+    margin: 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+}
+
+.species-meta li strong {
+    color: var(--forest);
 }
 
 /* ==================== TABLAS ==================== */
@@ -444,7 +591,7 @@ dd {
 .card a,
 .btn:not(.btn-ghost):not(.btn-primary) {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.85rem 1.75rem;
     background: var(--clay);
     color: var(--paper);
@@ -648,6 +795,10 @@ dd {
     .nav-links::-webkit-scrollbar-thumb {
         background: rgba(250, 247, 240, 0.25);
         border-radius: 4px;
+    }
+
+    .diagram-split {
+        grid-template-columns: 1fr;
     }
 }
 
