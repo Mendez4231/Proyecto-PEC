@@ -112,12 +112,16 @@
                 <li>Realizar riegos moderados y evitar encharcamientos.</li>
             </ul>
         </section>
+        <section class="text">
         <p>La Conafor señala que el composteo puede mejorar la calidad y estructura del suelo, además de proporcionar nutrientes que favorecen el establecimiento de especies forestales.</p>
 
-        <div class="cta">
-            <p></p>
-        </div>
-       
+        <p class="cta">
+            “Conocer el suelo es el primer paso para reforestar de manera correcta. En el CBTA 35 ‘Leona Vicario’, identificar las características del terreno nos permitirá elegir especies adecuadas, evitar problemas de drenaje o salinidad y aumentar las posibilidades de que los árboles crezcan sanos y fuertes.”</p>
+</p>  
+         <div class="card">
+                <a href="{{ route('arboles') }}" class="btn">Ver árboles recomendados para nuestro CBTA</a>
+            </div> 
+            </section>
     </section>
     
     </main>
